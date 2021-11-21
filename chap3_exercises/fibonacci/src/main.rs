@@ -22,10 +22,13 @@ fn main() {
 }
 
 fn fibonacci(iterations: u32, last: u32, before_last: u32) -> u32 {
-	if iterations == 1 {
-		return last + before_last;
+	if iterations == 0 {
+		0
+	}
+	else if iterations == 1 {
+		last + before_last
 	}
 	else {
-		return fibonacci(iterations - 1, last + before_last, last);
+		fibonacci(iterations - 1, last + before_last, last)
 	}
 }
