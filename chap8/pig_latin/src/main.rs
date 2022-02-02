@@ -62,3 +62,11 @@ fn set_first_char(c: char) -> char {
 fn is_vowel(c: char) -> bool {
 	c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' 
 }
+
+#[cfg(test)]
+mod test {
+	#[test]
+	fn it_works() {
+		assert_eq!(2 + 2, 4);
+	}
+}
